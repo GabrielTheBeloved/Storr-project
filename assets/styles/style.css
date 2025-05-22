@@ -580,6 +580,11 @@ nav a:hover {
     height: auto;
     margin: 1rem 0;
   }
+
+  .feature-details .icloud {
+    padding-right: 2rem;
+    margin-top: -3rem;
+  }
 }
 
 
@@ -697,6 +702,10 @@ nav a:hover {
 
   .storage-details p {
     font-size: 0.75rem;
+  }
+
+  .phone {
+    margin-bottom: -1.5rem ;
   }
 }
 
