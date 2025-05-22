@@ -14,13 +14,14 @@
         <header>
             <div class="navbar">
                 <img class="logo" src="assets/images/Storr Logo f.png" alt="">
-                <nav>
+                <nav id="nav-menu">
                     <a href="#Home">HOME</a>
                     <a href="#About">ABOUT</a>
                     <a href="#features">FEATURES</a>
                     <a href="#contact">CONTACT</a>
                     <a href="#faq">FAQ</a>
                 </nav>
+                <div class="hamburger" id="hamburger">☰</div>
             </div>
             <div class="container">
                 <div class="left">
@@ -194,5 +195,13 @@
             </table>
         </footer>
     </main>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
