@@ -33,10 +33,6 @@ header {
   pointer-events: none;
 }
 
-.logo {
-  margin: 1%;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -212,7 +208,7 @@ nav a:hover {
 
   .box-img {
     width: 50px;
-    right: 70px;
+    right: 57px;
     top: -40px;
   }
 
@@ -227,15 +223,37 @@ nav a:hover {
 @media (max-width: 640px) {
   nav {
     display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 999;
   }
 
-  .navbar {
-    justify-content: center;
+  nav.active {
+    display: flex;
   }
+
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding-left: 10rem;
+  }
+
+  nav a:hover {
+  color: #0431C7;
+}
 
   .logo {
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
+
   }
 
   .left h1 {
@@ -273,6 +291,12 @@ nav a:hover {
 
   .active-users img {
     width: 80px;
+  }
+}
+
+@media (min-width: 641px) {
+  .hamburger {
+    display: none;
   }
 }
 
