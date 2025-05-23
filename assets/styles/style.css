@@ -223,6 +223,20 @@ nav a:hover {
 @media (max-width: 640px) {
   nav {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem 0;
+    z-index: 100;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border-radius: 1rem;
+  }
+
+  nav.active {
+    display: flex;
   }
 
   .hamburger {
@@ -234,13 +248,12 @@ nav a:hover {
   }
 
   nav a:hover {
-  color: #0431C7;
-}
+    color: #0431C7;
+  }
 
   .logo {
     margin: 0;
     text-align: center;
-
   }
 
   .left h1 {
